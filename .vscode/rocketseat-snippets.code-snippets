@@ -1,0 +1,28 @@
+{
+  "Basic React Native Interface": {
+    "prefix": "rni",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import {Container} from './styles';",
+      "",
+      "export function ${TM_DIRECTORY/.*[\\\\|\\/]+(.*)/$1/}(){",
+      "  return (",
+      "    <Container>",
+      "",
+      "    </Container>",
+      "  );",
+      "}"
+    ]
+  },
+  "Basic React Native Style": {
+    "prefix": "rns",
+    "body": [
+      "import styled from 'styled-components/native';;",
+      "",
+      "export const Container = styled.View`",
+      "flex: 1;",
+      "`;"
+    ]
+  }
+}

@@ -1,5 +1,7 @@
 import React, {type PropsWithChildren} from 'react';
-import {Text, View} from 'react-native';
+import {ThemeProvider} from 'styled-components/native';
+import {Home} from './src/screens';
+import theme from './src/styles/theme';
 
 const App: React.FC<
   PropsWithChildren<{
@@ -7,9 +9,9 @@ const App: React.FC<
   }>
 > = ({children, title}) => {
   return (
-    <View>
-      <Text>hello, world</Text>
-    </View>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
   );
 };
 
